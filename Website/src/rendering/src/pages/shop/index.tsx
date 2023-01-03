@@ -8,7 +8,7 @@ const Shop = (): JSX.Element => {
   return (
     <>
       <CategoriesList
-        title="Welcome to PLAY! SHOP"
+        title="Welcome to OrderCloud Demo"
         subtitle="Shop Trending Categories:"
         theme="orange"
       />

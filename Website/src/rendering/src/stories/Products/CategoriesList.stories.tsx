@@ -18,7 +18,7 @@ DiscoverService({
 
 export const Default = Template.bind({});
 Default.args = {
-  title: 'Welcome to PLAY! SHOP',
+  title: 'Welcome to OrderCloud Demo',
   subtitle: 'Shop by category:',
   theme: 'blue',
   trendingCategoriesProps: mockDiscoverData.trendingCategoriesProps,
