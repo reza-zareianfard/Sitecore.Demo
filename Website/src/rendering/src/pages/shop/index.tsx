@@ -25,7 +25,7 @@ Shop.getLayout = function getLayout(page: ReactElement) {
   return (
     <ShopLayout>
       <Head>
-        <title>PLAY! SHOP</title>
+        <title>Zip OrderCloud Demo</title>
       </Head>
 
       {page}
