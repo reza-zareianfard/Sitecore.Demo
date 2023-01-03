@@ -11,7 +11,7 @@
 
     .logo-container {
       @apply flex-shrink-0 w-24;
-      @apply sm:w-28;
+      @apply sm:w-36;
     }
 
     .items-container {
