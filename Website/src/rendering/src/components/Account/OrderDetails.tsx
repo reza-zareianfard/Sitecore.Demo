@@ -57,6 +57,13 @@ const OrderDetails = (): JSX.Element => {
       <OrderDetailsContent order={order} shipMethod={shipMethod} creditCard={creditCard} />
     ) : null;
 
+  console.log('[DEBUG] order');
+  console.log(order);
+  console.log('[DEBUG] shipMethod');
+  console.log(shipMethod);
+  console.log('[DEBUG] creditCard');
+  console.log(creditCard);
+
   return orderDetailsContent;
 };
 
