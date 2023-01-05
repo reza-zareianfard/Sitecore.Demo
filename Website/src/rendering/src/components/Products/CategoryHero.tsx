@@ -16,7 +16,7 @@ const CategoryHero = ({ category }: CategoryHeroProps): JSX.Element => {
 
   const categoryChildren = getCategoryChildrenByCcid(category.ccid);
   const subCategories = categoryChildren && (
-    <div className="category-hero-sub" style="display:none;">
+    <div className="category-hero-sub">
       <ul>
         {categoryChildren.slice(0, 3).map((cat) => (
           <li key={cat.ccid}>
@@ -43,7 +43,7 @@ const CategoryHero = ({ category }: CategoryHeroProps): JSX.Element => {
           <h1>{categoryDisplayName}</h1>
           <p>{category.desc}</p>
         </div>
-        {subCategories}
+        {/*subCategories*/}
       </div>
     </section>
   );
