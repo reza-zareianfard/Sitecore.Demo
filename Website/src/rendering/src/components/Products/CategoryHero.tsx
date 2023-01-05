@@ -1,7 +1,5 @@
-import Link from 'next/link';
 import { Category } from '../../models/Category';
 import CategoryBreadcrumb from '../../components/Navigation/CategoryBreadcrumb';
-import { getCategoryChildrenByCcid } from '../../helpers/CategoriesDataHelper';
 
 type CategoryHeroProps = {
   category: Category;
