@@ -43,7 +43,7 @@ const CategoryHero = ({ category }: CategoryHeroProps): JSX.Element => {
           <h1>{categoryDisplayName}</h1>
           <p>{category.desc}</p>
         </div>
-        {/*subCategories*/}
+        {subCategories}
       </div>
     </section>
   );

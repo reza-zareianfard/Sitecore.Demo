@@ -25,9 +25,12 @@ const OrderReviewDetails = (): JSX.Element => {
 
   const deliveryPanelContent = (
     <>
-      <p>Delivery type: Pick up from store {/*{deliveryMethod?.Name}*/}</p>
+      <p>Delivery type: {deliveryMethod?.Name}</p>
+      <p>
+        Estimated delivery: {calculateEstimatedDeliveryDate(deliveryMethod?.EstimatedTransitDays)}
+      </p>
       <div>
-        <p className="title">{/*Shipping*/} Store address:</p>
+        <p className="title">Shipping address:</p>
         <p>
           {shippingAddress?.FirstName} {shippingAddress?.LastName}
         </p>
