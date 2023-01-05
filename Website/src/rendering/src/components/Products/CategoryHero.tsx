@@ -14,27 +14,6 @@ const CategoryHero = ({ category }: CategoryHeroProps): JSX.Element => {
 
   const categoryDisplayName = category.title ? category.title : category.name;
 
-  const categoryChildren = getCategoryChildrenByCcid(category.ccid);
-  const subCategories = categoryChildren && (
-    <div className="category-hero-sub">
-      <ul>
-        {categoryChildren.slice(0, 3).map((cat) => (
-          <li key={cat.ccid}>
-            <Link href={cat.url_path}>
-              <a>
-                <img
-                  src={cat?.image_url || '/assets/img/shop/category-placeholder.png'}
-                  alt="Category"
-                />
-                <h4>{cat?.title || cat.name}</h4>
-              </a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-
   return (
     <section className="category-hero">
       <CategoryBreadcrumb category={category} />
@@ -43,7 +22,6 @@ const CategoryHero = ({ category }: CategoryHeroProps): JSX.Element => {
           <h1>{categoryDisplayName}</h1>
           <p>{category.desc}</p>
         </div>
-        {/*subCategories*/}
       </div>
     </section>
   );
