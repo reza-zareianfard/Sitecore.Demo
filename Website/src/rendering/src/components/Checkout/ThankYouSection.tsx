@@ -61,10 +61,12 @@ const ThankYouSection = (): JSX.Element => {
           <span className="item-icon">
             <FontAwesomeIcon icon={faEnvelope} />
           </span>
+          {/*
           <p>
             An email receipt including the details of your order has been sent to the email address
             provided. Please keep it for your records.
           </p>
+          */}
         </li>
         {content}
       </ul>
